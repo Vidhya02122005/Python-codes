@@ -1,0 +1,14 @@
+c="V"
+uc=0
+lc=0
+while(c not in "AEIOUaeiou"):
+    c = input("Enter the character:")
+    if (c in "AEIOUaeiou"):
+        break
+    if c.isupper():
+        uc=uc+1
+    else:
+        lc=lc+1
+
+print("Total no.of upper case:",uc)
+print("Total no.of lower case:",lc)
