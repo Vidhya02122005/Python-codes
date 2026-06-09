@@ -1,0 +1,15 @@
+n="t"
+up=0
+lo=0
+while(n not in "AEIOUaeiou"):
+    if (n in "AEIOUaeiou"):
+        break
+    n=input("Enter a character:")
+    if (n.isupper()):
+        up=up+1
+    elif (n.islower()):
+        lo=lo+1
+    else:
+        print("Give only alphabets")
+print("TOTAL NO OF UPPERCASE:",up)
+print("TOTAL NO OF LOWERCASE:",lo)
