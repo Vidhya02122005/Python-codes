@@ -1,0 +1,40 @@
+def sq():
+    a=int(input("Enter side: "))
+    print("Area of the square = ",a*a)
+    
+def rect(le,br):
+    print("Area of the rectangle = ",le*br)
+    
+def tri(l,b):
+    return 0.5*l*b
+    
+def cir():
+    return 3.14*r*r
+
+
+print("1.SQUARE")
+print("2.RECTANGE")
+print("3.TRIANGLE")
+print("4.CIRCLE")
+ch=int(input("Enter your option:"))
+
+if (ch==1):
+    sq()
+   
+    
+if (ch==2):
+    le=int(input("Enter the length:"))
+    br=int(input("enter the breadth:"))
+    rect(le,br)
+
+    
+if (ch==3):
+    l=int(input("Enter the length of the triangle:"))
+    b=int(input("Enter the breadth of the triangle:"))
+    y=tri(l,b)
+    print(y)
+
+if (ch==4):
+    r=int(input("Enter the radius of the circle:"))
+    x=cir()
+    print(x)
