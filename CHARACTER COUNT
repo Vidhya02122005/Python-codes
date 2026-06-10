@@ -1,0 +1,6 @@
+a = 5566895475
+b = set(str(a))
+c = len(b)
+d = len(str(a))
+e = d-c
+print(e)
