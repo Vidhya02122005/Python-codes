@@ -1,0 +1,7 @@
+names=["Vidhya","Trisha","Tharshini","Swetha","Dharani"]
+marks=[98,85,35,86,25]
+pos=0
+for i in range (5):
+    if marks[i]>40:
+        print("{} has scored {} marks.".format(names[i],marks[i]))
+        pos=pos+1
