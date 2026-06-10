@@ -1,7 +1,17 @@
 names=["Vidhya","Trisha","Tharshini","Swetha","Dharani"]
 marks=[98,85,35,86,25]
-pos=0
+pos=1
+pos1=1
+print("Passed students")
 for i in range (5):
     if marks[i]>40:
-        print("{} has scored {} marks.".format(names[i],marks[i]))
+        print("{}. {} has scored {} marks.".format(pos,names[i],marks[i]))
         pos=pos+1
+
+print()
+print("Failed students")
+for i in range(5):  
+    if marks[i]<40:
+        
+        print("{}. {} has failed scoring {} marks.".format(pos1,names[i],marks[i]))
+        pos1=pos1+1
