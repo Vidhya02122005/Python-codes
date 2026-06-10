@@ -1,0 +1,6 @@
+ames=["Vidhya","Trisha","Tharshini","Swetha","Dharani"]
+marks=[[33,22,55],[55,66,89],[85,99,58],[78,45,45],[78,55,89]]
+
+for i in range (5):
+    avg=sum(marks[i])//3
+    print("{}'s average is {}".format(names[i],avg))
