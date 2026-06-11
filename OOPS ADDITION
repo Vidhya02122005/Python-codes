@@ -1,0 +1,16 @@
+class abc:
+    def add(self):
+        a=int(input("Enter the number:"))
+        b=int(input("Enter the number:"))
+        self.x=a
+        self.y=b
+    
+    def display(self):
+        print("The sum is : ", self.x+ self.y)
+    
+a1=abc()
+a2=abc()
+a1.add()
+a1.display()
+a2.add()
+a2.display()
