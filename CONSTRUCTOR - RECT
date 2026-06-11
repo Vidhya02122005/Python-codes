@@ -1,0 +1,14 @@
+class RECT:
+    def __init__(self,a,b):
+        self.le=a
+        self.br=b
+
+    def display(self):
+        print("The area of rectange is : ", self.le*self.br)
+
+ 
+r1=RECT(20,30)
+r2=RECT(10,20)
+
+r1.display()
+r2.display()
