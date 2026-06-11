@@ -1,0 +1,20 @@
+class RECT:
+    def __init__(self):
+        self.le=int(input("Enter the input:"))
+        self.br=int(input("Enter the input:"))
+
+    def display(self):
+        print("The area of rectange is : ", self.le*self.br)
+
+n=int(input("Enter the numbers:"))
+l=[]
+for i in range(n):
+    r=RECT()
+    l.append(r)
+for i in l:
+    i.display()
+    
+
+    
+
+
