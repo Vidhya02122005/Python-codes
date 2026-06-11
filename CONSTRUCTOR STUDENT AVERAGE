@@ -1,0 +1,40 @@
+college="HINDUSTAN"
+class CSE:
+    dept="COMPUTER SCIENCE AND ENGINEERING"
+    def __init__(self,a,b,c,d):
+        self.m1=a
+        self.m2=b
+        self.m3=c
+        self.name=d
+    
+    def display(self):
+        print("The sum is : ", self.name)
+        print("The average is : ",(self.m1+self.m2+self.m3)//3)
+        print("Department: ",CSE.dept)
+        print("College name: ",college)
+        print()
+        
+class AIML:
+    dept="ARTIFICIAL INTELLIGENCE AND DATA SCIENCE"
+    def __init__(self,a,b,c,d):
+        self.m1=a
+        self.m2=b
+        self.m3=c
+        self.name=d
+    
+    def display(self):
+        print("The sum is : ", self.name)
+        print("The average is : ",(self.m1+self.m2+self.m3)//3)
+        print("Department: ",AIML.dept)
+        print("College name: ",college)
+        print()
+    
+a1=CSE(99,90,90,"VIDHYA")
+a2=CSE(99,98,90,"TRISHA")
+b1=AIML(88,80,95,"PRIYA")
+b2=AIML(88,80,95,"RIYA")
+
+a1.display()
+a2.display()
+b1.display()
+b2.display()
