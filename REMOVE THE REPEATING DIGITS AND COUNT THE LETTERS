@@ -1,0 +1,13 @@
+a=input("ENTER A STRING:")
+b=input("ENTER A STRING:")
+a1=list(a)
+b1=list(b)
+for i in a1:
+    for j in b1:
+        if (i==j and i in a1 and j in b1):
+            a1.remove(i)
+            b1.remove(j)
+c=len(a1)
+d=len(b1)
+sum=c+d
+print(sum)
