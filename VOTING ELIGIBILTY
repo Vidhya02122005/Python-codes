@@ -1,0 +1,7 @@
+n=input("Enter your name:")
+a=int(input("Enter your age:"))
+g=input("Enter your gender(M/F:")
+if (a>=18 and a<=60) and (g=="M" and a>=30) or (g=="F" and a>=18):
+    print("{} is eligible to vote.".format(n))
+else:
+    print("{} is not eligible to vote.".format(n))
