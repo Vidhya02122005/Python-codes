@@ -1,0 +1,49 @@
+a=["123","45","78"]
+b=list(map(int,a))
+print(b)
+
+s=["x","y","z"]
+t=list(map(lambda a:a.upper(),s))
+print(t)
+
+st=["Vidhya","Swethaa","Tharshini","Prasanna"]
+string=list(map(len,st))
+print(string)
+
+marks=[90,92,85,75,86]
+grace=list(map(lambda x:x+5,marks))
+print(grace)
+
+c=[50,95,62,75,41]
+d=[56,75,84,55,85]
+total=list(map(lambda x,y:x+y,c,d))
+print(total)
+
+dictionary={'stu1':"Vidhya",'stu2':"Swetha",'stu3':"Tharshini"}
+names=dict(map(lambda x:(x[0]https://www.onlinegdb.com/online_python_compiler#tab-stdin,x[1].upper()),dictionary.items()))
+print(names)
+
+li=["123","22","Vidhya","88"]
+li1=list(map(lambda x:int(x) if x.isdigit() else "Hi",li))
+print(li1)
+
+
+dic={'x':50,'y':45}
+dic1=dict(map(lambda x:(x[0],x[1]//10+x[1]),dic.items()))
+print(dic1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
