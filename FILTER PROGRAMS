@@ -1,0 +1,20 @@
+a=[5,8,9,57,6,4,7,89,2]
+b=filter(lambda x:x%2==0,a)
+print(list(b))
+
+x=["Computer","Orange","Icecream","Ground","apartment"]
+y=filter(lambda x:len(x)>6,x)
+print(list(y))
+
+s={"stu1":30,"stu2":80,"stu3":78,"stu4":96,"stu5":56}
+t=filter(lambda x:(x[1]>60),s.items())
+print(list(t))
+
+u=[85,90,45,68,35,64]
+v=filter(lambda x:x>35,list(map(lambda x:x+5,u)))
+print(list(v))
+
+u=[85,90,45,68,35,64]
+q=map(lambda x:x+5,filter(lambda x:x>35,u))  
+print(list(q))
+
