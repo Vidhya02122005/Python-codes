@@ -1,0 +1,9 @@
+import heapq
+a=[23,4,76,8,2,65,12,56]
+x=[]
+for i in a:
+    heapq.heappush(x,-i)
+x1=[-i for i in x]
+print(x1)
+heapq.heappop(x1)
+print(x1)
