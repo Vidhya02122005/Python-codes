@@ -1,0 +1,11 @@
+import heapq
+a = [23, 4, 76, 8, 2, 65, 12, 56]
+k=2
+x = []
+for i in a:
+    heapq.heappush(x,-i)
+print(x)
+for i in range(k):
+    res=-heapq.heappop(x)
+print(res)
+    
