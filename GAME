@@ -1,0 +1,46 @@
+import random
+l=[]
+while len(l)<6:
+    n=random.randint(1,10)
+    if n not in l:
+        l.append(n)
+print(l)
+
+Player1 = input("Enter your name:")
+Player2 = input("Enter your name:")
+
+scorep1=0
+scorep2=0
+for i in range(3):
+    p1= int(input("Player 1: Enter a number:"))
+    if p1 in l:
+        print("Your Guess is right!")
+        scorep1=scorep1+1
+    else:
+        print("Your Guess is wrong!")
+    print(scorep1)
+    
+
+    p2= int(input("Player 2: Enter a number:"))
+    if p2 in l and p1!=p2:
+        print("Your Guess is right!")
+        scorep2=scorep2+1
+
+    elif p1==p2:
+        print("Try again!")
+        p2= int(input("Player 2: Enter a number:"))
+        if p2 in l and p1!=p2:
+            print("Your Guess is right!")
+            scorep2=scorep2+1
+        
+    else:
+        print("Your Guess is wrong")
+    print(scorep2)
+    
+if scorep1>scorep2:
+    print("Player 1 won the match!")
+elif scorep1<scorep2:
+    print("Player 2 won the match!")
+else:
+    print("Match is draw")
+
